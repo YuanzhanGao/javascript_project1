@@ -36,7 +36,7 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
-const playerSelection = "rock";
+let playerSelection = prompt("What do you want to use?");
 
 var playerWin = 0;
 var cpWin = 0;
@@ -70,4 +70,14 @@ for (let i = 0; i < 5; i++) {
 
     console.log("---------------------------------------------");
 
+}
+
+if (playerWin > cpWin) {
+    console.log("You won " + playerWin + " rounds and you won!");
+}
+else if (cpWin > playerWin) {
+    console.log("The computer won " + cpWin + " rounds and it has won.");
+}
+else {
+    console.log("It's a draw!");
 }
